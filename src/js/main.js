@@ -22,15 +22,6 @@ var cards = [
 ];
 const cardsInPlay = [];
 
-//check for match function
-function checkForMatch() {
-  if (cardsInPlay[0] === cardsInPlay[1]) {
-    alert("You found a match!");
-  } else {
-    alert("Sorry, try again.");
-  }
-}
-
 //flip card function
 function flipCard() {
   // These 2 lines make the card faces appear instead of the card backs.
@@ -44,7 +35,17 @@ function flipCard() {
   console.log(cards[cardId].suit);
   // Check for match AFTER value has been added to cardsInPlay array.
   if (cardsInPlay.length === 2) {
-    checkForMatch();
+    setTimeout(checkForMatch, 250);
+    //checkForMatch();
+  }
+}
+
+//check for match function
+function checkForMatch() {
+  if (cardsInPlay[0] === cardsInPlay[1]) {
+    alert("You found a match!");
+  } else {
+    alert("Sorry, try again.");
   }
 }
 
@@ -59,21 +60,3 @@ function createBoard() {
   }
 }
 createBoard();
-
-// console.log("Up and running!");
-
-// var cards = ["queen", "queen", "king", "king"];
-// var cardsInPlay = [];
-// var cardOne = cards[0];
-// cardsInPlay.push(cardOne);
-// console.log("User flipped queen");
-// var cardTwo = cards[2];
-// cardsInPlay.push(cardTwo);
-// console.log("User flipped king");
-// if (cardsInPlay.length === 2) {
-//   if (cardsInPlay[0] === cardsInPlay[1]) {
-//     alert("You found a match!");
-//   } else {
-//     alert("Sorry, try again.");
-//   }
-// }
