@@ -53,6 +53,7 @@ function checkForMatch() {
 function createBoard() {
   for (var i = 0; i < cards.length; i++) {
     var cardElement = document.createElement("img");
+    cardElement.setAttribute("class", "card");
     cardElement.setAttribute("src", "images/back.png");
     cardElement.setAttribute("data-id", i);
     cardElement.addEventListener("click", flipCard);

@@ -3,6 +3,9 @@ body {
   text-decoration: none;
   margin: 0;
 }
+.card {
+  cursor: pointer;
+}
 
 h1 {
   font-family: "Raleway", sans-serif;
