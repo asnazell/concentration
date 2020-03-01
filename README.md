@@ -23,4 +23,4 @@ Built with HTML, CSS and JS.
 - added effects to cards when they match and are unmatched
 - create a pop-up modal when player wins game
 
-[screenshot](screenshot.png)
+![screenshot](screenshot.png)
