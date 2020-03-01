@@ -8,7 +8,7 @@ Match cards in less time with less moves.
 
 ## How to Play
 
-Open index.html in your browser.
+https://concentration-asnazell.netlify.com/
 
 - Click on a card
 - Keep revealing cards and working your memory to remember each unveiled card
